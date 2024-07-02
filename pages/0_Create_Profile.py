@@ -31,9 +31,10 @@ st.session_state.address = st.text_input('Address:', st.session_state.address)
 st.session_state.problem_description = st.text_area('Describe your problem:', st.session_state.problem_description)
 st.session_state.insurance = st.text_input('Insurance (if any):', st.session_state.insurance)
 
-# Button to redirect to Provider_Search page
+# Button to redirect to Upload Documents page
 if st.button('Next'):
-    st.experimental_set_query_params(page='1_Upload_Documents')
+    st.session_state.page = 'Upload_Documents'
+    st.experimental_rerun()
 
 # Displaying a temporary message
-st.info('Fill in your profile details and click "Next" to proceed to the provider search page.')
+st.info('Fill in your profile details and click "Next" to proceed.')

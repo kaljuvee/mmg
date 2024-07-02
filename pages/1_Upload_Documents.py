@@ -28,3 +28,8 @@ uploaded_files = st.file_uploader("Upload your medical documents", type=["pdf", 
 if uploaded_files:
     for uploaded_file in uploaded_files:
         save_uploaded_file(uploaded_file)
+
+# Button to go back to Profile page
+if st.button('Back'):
+    st.session_state.page = 'Create_Profile'
+    st.experimental_rerun()
