@@ -13,7 +13,6 @@ def find_providers(specialties, locations):
     
     return filtered_df
 
-st.set_page_config(page_title='Provider Search', page_icon='🔍')
 
 st.title('Find Provider')
 
