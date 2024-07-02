@@ -17,3 +17,9 @@
   ```
   pip install -r requirements.txt
   ```
+
+## Run the Application
+
+```
+streamlit run Home.py
+```
