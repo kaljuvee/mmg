@@ -6,7 +6,8 @@ from utils import switch_page
 #st.set_page_config(page_title='My Medical Gateway', page_icon='👤')
 
 # Instructions
-st.title("Document Upload")
+st.title("My Medical Gateway")
+st.subheader("Upload Documents")
 
 st.write("""
     Please upload any relevant documents on your medical history and previous tests such as X-Rays and other medical records. 

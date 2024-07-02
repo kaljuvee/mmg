@@ -5,7 +5,8 @@ from utils import switch_page
 #st.set_page_config(page_title='My Medical Gateway', page_icon='👤')
 
 # Page title
-st.title('Create your profile')
+st.title("My Medical Gateway")
+st.subheader("Create Profile")
 
 # Initialize session state variables if they don't exist
 if 'first_name' not in st.session_state:

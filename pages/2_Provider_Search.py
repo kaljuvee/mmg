@@ -14,7 +14,8 @@ def find_providers(specialties, locations):
     return filtered_df
 
 
-st.title('Find Provider')
+st.title("My Medical Gateway")
+st.subheader("Find Providers")
 
 st.write("Search for providers by specialty and location.")
 

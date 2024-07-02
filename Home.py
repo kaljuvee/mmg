@@ -7,10 +7,10 @@ from utils import switch_page
 # Set page title and icon
 st.set_page_config(page_title='My Medical Gateway', page_icon='👤')
 
-st.title("My Medical Gateway - MVP")
+st.title("My Medical Gateway")
+st.subheader("Overview")
 
 st.markdown("""
-# Overview
 
 This will be replaced by the actual landing page but the current site map:
             
