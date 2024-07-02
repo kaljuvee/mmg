@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set page title and icon
-st.set_page_config(page_title='Create your profile', page_icon='👤')
+st.set_page_config(page_title='My Medical Gateway', page_icon='👤')
 
 # Page title
 st.title('Create your profile')
@@ -33,7 +33,7 @@ st.session_state.insurance = st.text_input('Insurance (if any):', st.session_sta
 
 # Button to redirect to Provider_Search page
 if st.button('Next'):
-    st.experimental_set_query_params(page='1_Provider_Search')
+    st.experimental_set_query_params(page='1_Upload_Documents')
 
 # Displaying a temporary message
 st.info('Fill in your profile details and click "Next" to proceed to the provider search page.')

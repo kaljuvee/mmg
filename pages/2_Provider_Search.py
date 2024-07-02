@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set page title and icon
-st.set_page_config(page_title='Provider Search', page_icon='🔍')
+st.set_page_config(page_title='My Medical Gateway - Provider Search', page_icon='🔍')
 
 # Page title
 st.title('Provider Search')
