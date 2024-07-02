@@ -1,7 +1,8 @@
 import streamlit as st
+from utils import switch_page
 
 # Set page title and icon
-st.set_page_config(page_title='My Medical Gateway', page_icon='👤')
+#st.set_page_config(page_title='My Medical Gateway', page_icon='👤')
 
 # Page title
 st.title('Create your profile')
@@ -31,10 +32,10 @@ st.session_state.address = st.text_input('Address:', st.session_state.address)
 st.session_state.problem_description = st.text_area('Describe your problem:', st.session_state.problem_description)
 st.session_state.insurance = st.text_input('Insurance (if any):', st.session_state.insurance)
 
-# Button to redirect to Upload Documents page
-if st.button('Next'):
-    st.session_state.page = 'Upload_Documents'
-    st.experimental_rerun()
+if st.button('Save Profile and Continue to Document Upload'):
+    # Here you would typically save the profile data
+    # For this example, we're just navigating to the next page
+    switch_page("Upload Documents")
 
-# Displaying a temporary message
-st.info('Fill in your profile details and click "Next" to proceed.')
+if st.button('Back to Home'):
+    switch_page("Home")

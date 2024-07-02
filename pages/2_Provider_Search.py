@@ -1,20 +1,49 @@
+# pages/Provider_Search.py
 import streamlit as st
+import pandas as pd
+from utils import switch_page
 
-# Set page title and icon
-st.set_page_config(page_title='My Medical Gateway - Provider Search', page_icon='🔍')
+def find_providers(specialties, locations):
+    # Read the CSV file
+    df = pd.read_csv('providers.csv')
+    
+    # Filter based on selected specialties and locations
+    mask = df['Specialty'].isin(specialties) & df['Country'].isin(locations)
+    filtered_df = df[mask]
+    
+    return filtered_df
 
-# Page title
-st.title('Provider Search')
+st.set_page_config(page_title='Provider Search', page_icon='🔍')
 
-# Display the captured profile information
-st.subheader('Your Profile Information')
-st.write(f"**First Name:** {st.session_state.get('first_name', '')}")
-st.write(f"**Last Name:** {st.session_state.get('last_name', '')}")
-st.write(f"**Email:** {st.session_state.get('email', '')}")
-st.write(f"**Phone:** {st.session_state.get('phone', '')}")
-st.write(f"**Address:** {st.session_state.get('address', '')}")
-st.write(f"**Problem Description:** {st.session_state.get('problem_description', '')}")
-st.write(f"**Insurance:** {st.session_state.get('insurance', '')}")
+st.title('Find Provider')
 
-# Display a message
-st.info('This is the Provider Search page. You can implement the search functionality here.')
+st.write("Search for providers by specialty and location.")
+
+# Specialty multiselect
+specialties = ['Orthopedics', 'Gynecology', 'Ophthalmology', 'Other']
+selected_specialties = st.multiselect('Specialty', specialties)
+
+# Location multiselect
+locations = ['Latvia', 'Lithuania', 'Romania', 'France', 'Spain', 'Turkey', 'Poland', 'Hungary']
+selected_locations = st.multiselect('Location', locations)
+
+# Search button and functionality
+if st.button('Search Providers'):
+    if not selected_specialties or not selected_locations:
+        st.warning("Please select at least one specialty and one location.")
+    else:
+        st.write(f"Searching for providers in {', '.join(selected_locations)} specializing in {', '.join(selected_specialties)}")
+        results = find_providers(selected_specialties, selected_locations)
+        
+        if results.empty:
+            st.info("No providers found matching your criteria.")
+        else:
+            st.success(f"Found {len(results)} provider(s) matching your criteria.")
+            st.dataframe(results)
+
+# Navigation buttons
+if st.button('Back to Document Upload'):
+    switch_page("Upload Documents")
+
+if st.button('Back to Home'):
+    switch_page("Home")

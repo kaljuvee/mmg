@@ -1,8 +1,9 @@
 import streamlit as st
 import os
+from utils import switch_page
 
 # Set page title and icon
-st.set_page_config(page_title='My Medical Gateway', page_icon='👤')
+#st.set_page_config(page_title='My Medical Gateway', page_icon='👤')
 
 # Instructions
 st.title("Document Upload")
@@ -29,7 +30,8 @@ if uploaded_files:
     for uploaded_file in uploaded_files:
         save_uploaded_file(uploaded_file)
 
-# Button to go back to Profile page
-if st.button('Back'):
-    st.session_state.page = 'Create_Profile'
-    st.experimental_rerun()
+if st.button('Back to Profile'):
+    switch_page("Create Profile")
+
+if st.button('Next - Provider Search'):
+    switch_page("Provider Search")
