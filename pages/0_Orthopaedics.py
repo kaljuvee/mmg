@@ -60,7 +60,7 @@ st.markdown("""
     <p>Log in or create a MyMMG account to make changes, view your treatment documents or start a new search. Fast and easy, no need to call.</p>
 """, unsafe_allow_html=True)
 if st.button("Visit My MMG", key="visit_mmg"):
-    switch_page("My_MMG")
+    switch_page("Treatment")
 
 st.markdown("### New to My Medical Gateway?")
 st.markdown("""
