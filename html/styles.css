@@ -1,0 +1,83 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800');
+
+body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+    background-color: #FFFFFF;
+    color: #5B3B7E;  /* Violet color */
+}
+
+.header, .footer {
+    background-color: #F4EFE6;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #F4EFE6;
+}
+
+.header h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+    color: #5B3B7E;  /* Violet color */
+}
+
+.nav a {
+    margin: 0 1rem;
+    color: #5B3B7E;  /* Violet color */
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-primary {
+    background-color: #019863;
+    color: #FFFFFF;
+}
+
+.button-secondary {
+    background-color: #F4EFE6;
+    color: #5B3B7E;  /* Violet color */
+}
+
+.category {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    background-color: #F4EFE6;
+    margin: 0.5rem;
+}
+
+.category svg {
+    margin-right: 0.5rem;
+}
+
+.breadcrumb a, .breadcrumb span {
+    color: #A18249;  /* Orange color */
+}
+
+.quote-button {
+    background-color: #019863;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.quote-button.secondary {
+    background-color: #F4EFE6;
+    color: #5B3B7E;  /* Violet color */
+}
+
+.highlight {
+    color: #1A76D2;  /* Blue color */
+}
