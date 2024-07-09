@@ -3,15 +3,6 @@ import streamlit as st
 import pandas as pd
 from utils import switch_page
 
-def find_providers(specialty):
-    # Read the CSV file
-    df = pd.read_csv('providers.csv')
-    
-    # Filter based on selected specialty
-    filtered_df = df[df['SubSpecialty'] == specialty]
-    
-    return filtered_df
-
 st.title("My Medical Gateway")
 st.subheader("Find Providers")
 
@@ -27,26 +18,12 @@ specialties = [
 ]
 selected_specialty = st.selectbox('Specialty', specialties)
 
-# Search button and functionality
-if st.button('Search Providers'):
+if st.button('Continue to Patient Profile'):
     if not selected_specialty:
         st.warning("Please select a specialty.")
     else:
-        st.write(f"Searching for providers specializing in {selected_specialty}.")
-        results = find_providers(selected_specialty)
-        
-        if results.empty:
-            st.info("No providers found matching your criteria.")
-        else:
-            st.success(f"Found {len(results)} provider(s) matching your criteria.")
-            st.dataframe(results)
-
-# Navigation buttons
-if st.button('Back to Document Upload'):
-    switch_page("Upload Documents")
-
-if st.button('Back to Home'):
-    switch_page("Home")
+        st.session_state.selected_specialty = selected_specialty
+        switch_page("Create Profile")
 
 # Adding disclaimer text
 st.write("""

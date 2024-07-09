@@ -33,10 +33,10 @@ st.session_state.address = st.text_input('Address:', st.session_state.address)
 st.session_state.problem_description = st.text_area('Describe your problem:', st.session_state.problem_description)
 st.session_state.insurance = st.text_input('Insurance (if any):', st.session_state.insurance)
 
-if st.button('Save Profile and Continue to Document Upload'):
+if st.button('See Quote'):
     # Here you would typically save the profile data
     # For this example, we're just navigating to the next page
-    switch_page("Upload Documents")
+    switch_page("Quote")
 
-if st.button('Back to Home'):
-    switch_page("Home")
+if st.button('Back to Treatment'):
+    switch_page("Orthopedics_Treatment")
