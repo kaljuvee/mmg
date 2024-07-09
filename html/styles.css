@@ -105,3 +105,17 @@ body {
 .category-button:hover {
     background-color: #017a4a; /* Darker shade on hover */
 }
+
+/* Add these styles for the headings and paragraphs */
+.violet-heading {
+    color: #5B3B7E;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.violet-paragraph {
+    color: #5B3B7E;
+    font-size: 16px;
+    line-height: 1.5;
+}

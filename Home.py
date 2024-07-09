@@ -39,13 +39,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Navigation buttons
-col1, col2 = st.columns([1, 3])
-with col1:
-    st.button("My MMG", key="mmg", on_click=lambda: switch_page("mmg"), use_container_width=True)
-    st.button("Menu", key="menu", on_click=lambda: switch_page("menu"), use_container_width=True)
-
-with col2:
-    st.image("https://cdn.usegalileo.ai/sdxl10/e694ae8c-d71b-491c-b635-a188e726a934.png", width=40)
+st.image("https://cdn.usegalileo.ai/sdxl10/e694ae8c-d71b-491c-b635-a188e726a934.png", width=40)
 
 # Main content section
 st.markdown("""
@@ -72,14 +66,14 @@ st.markdown('<div class="category-buttons">', unsafe_allow_html=True)
 
 categories = st.columns(4)
 with categories[0]:
-    if st.button('Orthopedics'):
-        switch_page("Orthopedics")
+    if st.button('Orthopaedics'):
+        switch_page("Orthopaedics")
 with categories[1]:
     if st.button('Ophthalmology'):
         switch_page("Ophthalmology")
 with categories[2]:
-    if st.button('Gynecology'):
-        switch_page("Gynecology")
+    if st.button('Gynaecology'):
+        switch_page("Gynaecology")
 with categories[3]:
     if st.button('Other'):
         switch_page("Other")
