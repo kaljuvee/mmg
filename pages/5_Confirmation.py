@@ -13,5 +13,7 @@ if email:
 else:
     st.write("Your payment has been successfully processed. Thank you for choosing My Medical Gateway!")
 
-if st.button('Back to Home'):
-    switch_page("Home")
+st.write("If you are happy with the quote,  please visit My Medical Gateway to upload addtional information.")
+
+if st.button('Visit MMG'):
+    switch_page("Documents")

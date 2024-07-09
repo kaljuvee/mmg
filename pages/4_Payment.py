@@ -5,6 +5,15 @@ from utils import switch_page
 st.title("My Medical Gateway")
 st.subheader("Payment")
 
+# Inject CSS for custom styling
+st.markdown("""
+    <style>
+        .stSelectbox div[data-baseweb="select"] {
+            width: 200px;  /* Adjust the width as needed */
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # Retrieve the first name, last name, and address from session state
 first_name = st.session_state.get('first_name', '')
 last_name = st.session_state.get('last_name', '')
