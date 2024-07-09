@@ -15,7 +15,7 @@ def load_provider_details():
         "Specialty": "Orthopedics",
         "SubSpecialty": "Arthroscopy",
         "Quote(EUR)": "1500",
-        "ReviewStars": "img/5-star.png"  # Path to the image of stars for review
+        "ReviewStars": "img/5-star.PNG"  # Path to the image of stars for review
     }
     return provider_details
 
