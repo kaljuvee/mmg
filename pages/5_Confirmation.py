@@ -6,10 +6,12 @@ st.title("My Medical Gateway")
 st.subheader("Confirmation")
 
 # Retrieve email from session state
-email = st.session_state.email
+email = st.session_state.get('email', '')
 
-st.write(f"Your payment has been successfully processed. Thank you for choosing My Medical Gateway! An email was sent to {email}.")
+if email:
+    st.write(f"Your payment has been successfully processed. Thank you for choosing My Medical Gateway! An email was sent to {email}.")
+else:
+    st.write("Your payment has been successfully processed. Thank you for choosing My Medical Gateway!")
 
 if st.button('Back to Home'):
     switch_page("Home")
-

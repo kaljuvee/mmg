@@ -20,10 +20,15 @@ if 'card_address' not in st.session_state:
 if 'card_number' not in st.session_state:
     st.session_state.card_number = ''
 
+# Display debug information
+st.write(f"Address: {address}")
+st.write(f"Card Name: {st.session_state.card_name}")
+
 # Input fields
-st.session_state.card_name = st.text_input('Cardholder Name:', card_name)
-st.session_state.card_address = st.text_input('Billing Address:', address)
+st.session_state.card_name = st.text_input('Cardholder Name:', st.session_state.card_name)
+st.session_state.card_address = st.text_input('Billing Address:', st.session_state.card_address)
 st.session_state.card_number = st.text_input('Card Number:', st.session_state.card_number)
+
 
 if st.button('Submit Payment'):
     # Here you would typically process the payment
