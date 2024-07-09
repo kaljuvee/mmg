@@ -68,6 +68,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Category buttons
+st.markdown('<div class="category-buttons">', unsafe_allow_html=True)
 
 categories = st.columns(4)
 with categories[0]:
@@ -82,3 +83,5 @@ with categories[2]:
 with categories[3]:
     if st.button('Other'):
         switch_page("Other")
+
+st.markdown('</div>', unsafe_allow_html=True)

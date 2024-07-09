@@ -81,3 +81,27 @@ body {
 .highlight {
     color: #1A76D2;  /* Blue color */
 }
+
+/* styles.css */
+.category-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 15px; /* Adjust the gap between buttons */
+}
+
+.category-button {
+    width: 100%;
+    padding: 10px 20px; /* Adjust padding for button size */
+    border: none;
+    border-radius: 5px;
+    background-color: #019863; /* Button background color */
+    color: white; /* Button text color */
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.category-button:hover {
+    background-color: #017a4a; /* Darker shade on hover */
+}
