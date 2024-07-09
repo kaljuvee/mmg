@@ -4,97 +4,13 @@ from utils import switch_page
 # Set up the page configuration
 st.set_page_config(page_title="My Medical Gateway", layout="wide")
 
-# Custom CSS for the page
-st.markdown("""
-    <style>
-        @import url('https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800');
-        
-        body {
-            font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
-            background-color: #FFFFFF;
-            color: #1C160C;
-        }
+# Function to load CSS from a file
+def load_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-        .header, .footer {
-            background-color: #F4EFE6;
-            padding: 1rem 2rem;
-            border-bottom: 1px solid #F4EFE6;
-        }
-
-        .header h2 {
-            font-size: 1.25rem;
-            font-weight: bold;
-            margin: 0;
-        }
-
-        .nav a {
-            margin: 0 1rem;
-            color: #1C160C;
-            font-size: 0.875rem;
-            font-weight: 500;
-            text-decoration: none;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            border-radius: 9999px;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .button-primary {
-            background-color: #019863;
-            color: #FFFFFF;
-        }
-
-        .button-secondary {
-            background-color: #F4EFE6;
-            color: #1C160C;
-        }
-
-        .search-bar {
-            display: flex;
-            align-items: center;
-            padding: 0.5rem;
-            border-radius: 9999px;
-            background-color: #F4EFE6;
-            color: #A18249;
-        }
-
-        .search-bar input {
-            border: none;
-            background: none;
-            outline: none;
-            flex: 1;
-            padding: 0.5rem;
-            color: #1C160C;
-            font-size: 0.875rem;
-        }
-
-        .search-bar button {
-            padding: 0.5rem 1rem;
-            border-radius: 9999px;
-            background-color: #019863;
-            color: #FFFFFF;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .category {
-            display: inline-flex;
-            align-items: center;
-            padding: 0.5rem 1rem;
-            border-radius: 9999px;
-            background-color: #F4EFE6;
-            margin: 0.5rem;
-        }
-
-        .category svg {
-            margin-right: 0.5rem;
-        }
-    </style>
-""", unsafe_allow_html=True)
+# Load the CSS file
+load_css("html/styles.css")
 
 # Header section
 st.markdown("""

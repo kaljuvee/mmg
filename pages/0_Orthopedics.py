@@ -31,12 +31,14 @@ st.markdown("""
     <div class="breadcrumb">
         <a href="#">Home</a>
         <span>/</span>
-        <span>Orthopaedics</span>
+        <span>Orthopedics</span>
     </div>
 """, unsafe_allow_html=True)
 
 # Main content section
-st.image("https://cdn.usegalileo.ai/sdxl10/b8c60733-ed79-4d55-8c2e-1706dc4f39e3.png", use_column_width=True, caption="ORTHOPAEDICS")
+# Main content section with a smaller image
+st.image("https://cdn.usegalileo.ai/sdxl10/b8c60733-ed79-4d55-8c2e-1706dc4f39e3.png", width=400, caption="Orthopedics")
+
 
 st.markdown("""
     <h1>Find the best treatment for you</h1>
