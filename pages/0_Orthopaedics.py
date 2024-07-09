@@ -9,22 +9,24 @@ def load_css(file_name):
 # Load the CSS file
 load_css("html/styles.css")
 
-# Header section
-st.markdown("""
-    <div class="header">
-        <div style="display: flex; align-items: center;">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-                <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
-            </svg>
-            <h2>My Medical Gateway</h2>
+# Header section with columns
+col1, col2 = st.columns([1, 3])
+
+with col1:
+    st.image("img/mmg-logo-small.png", width=200)
+
+with col2:
+    st.markdown("""
+        <div class="header">
+            <div class="nav" style="display: flex; align-items: center;">
+                <a href="#">Home</a>
+                <a href="#">Need Help?</a>
+                <a href="#">Chat</a>
+                <a href="#">Call us</a>
+                <a href="#">FAQs</a>
+            </div>
         </div>
-        <div class="nav" style="margin-left: auto; display: flex; align-items: center;">
-            <a href="#">Chat</a>
-            <a href="#">Call us</a>
-            <a href="#">FAQs</a>
-        </div>
-    </div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
 # Breadcrumb navigation
 st.markdown("""

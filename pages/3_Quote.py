@@ -19,6 +19,10 @@ st.write("Here are the providers for your selected specialty:")
 
 # Retrieve the selected specialty from session state
 selected_specialty = st.session_state.get('selected_specialty', None)
+first_name = st.session_state.get('first_name', 'Customer')
+
+# Display a personalized message
+st.write(f"Here is your quote, {first_name}!")
 
 if selected_specialty:
     results = find_providers(selected_specialty)

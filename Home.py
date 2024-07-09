@@ -12,35 +12,25 @@ def load_css(file_name):
 # Load the CSS file
 load_css("html/styles.css")
 
-# Header section
-st.markdown("""
-    <div class="header">
-        <div style="display: flex; align-items: center;">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-                <g clip-path="url(#clip0)">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z" fill="currentColor"></path>
-                </g>
-                <defs>
-                    <clipPath id="clip0">
-                        <rect width="48" height="48" fill="white"></rect>
-                    </clipPath>
-                </defs>
-            </svg>
-            <h2>My Medical Gateway</h2>
-        </div>
-        <div class="nav" style="margin-left: auto; display: flex; align-items: center;">
-            <a href="#">Home</a>
-            <a href="#">Need Help?</a>
-            <a href="#">Chat</a>
-            <a href="#">Call us</a>
-            <a href="#">FAQs</a>
-        </div>
-    </div>
-""", unsafe_allow_html=True)
+# Header section with columns
+col1, col2 = st.columns([1, 3])
 
-# Navigation buttons
-st.image("https://cdn.usegalileo.ai/sdxl10/e694ae8c-d71b-491c-b635-a188e726a934.png", width=40)
+with col1:
+    st.image("img/mmg-logo-small.png", width=200)
 
+with col2:
+    st.markdown("""
+        <div class="header">
+            <div class="nav" style="display: flex; align-items: center;">
+                <a href="#">Home</a>
+                <a href="#">Need Help?</a>
+                <a href="#">Chat</a>
+                <a href="#">Call us</a>
+                <a href="#">FAQs</a>
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
+    
 # Main content section
 st.markdown("""
     <div style="padding: 2rem;">
@@ -70,12 +60,12 @@ with categories[0]:
         switch_page("Orthopaedics")
 with categories[1]:
     if st.button('Ophthalmology'):
-        switch_page("Ophthalmology")
+        switch_page("Orthopaedics")
 with categories[2]:
     if st.button('Gynaecology'):
-        switch_page("Gynaecology")
+        switch_page("Orthopaedics")
 with categories[3]:
     if st.button('Other'):
-        switch_page("Other")
+        switch_page("Orthopaedics")
 
 st.markdown('</div>', unsafe_allow_html=True)

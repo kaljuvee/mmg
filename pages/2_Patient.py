@@ -1,12 +1,18 @@
 import streamlit as st
 from utils import switch_page
 
-# Set page title and icon
-#st.set_page_config(page_title='My Medical Gateway', page_icon='👤')
+# Inject CSS for custom styling
+st.markdown("""
+    <style>
+        .stSelectbox div[data-baseweb="select"] {
+            width: 200px;  /* Adjust the width as needed */
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # Page title
 st.title("My Medical Gateway")
-st.subheader("Create Profile")
+st.subheader("Patient Profile:")
 
 # Initialize session state variables if they don't exist
 if 'first_name' not in st.session_state:

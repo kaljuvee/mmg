@@ -3,6 +3,15 @@ import streamlit as st
 import pandas as pd
 from utils import switch_page
 
+# Inject CSS for custom styling
+st.markdown("""
+    <style>
+        .stSelectbox div[data-baseweb="select"] {
+            width: 200px;  /* Adjust the width as needed */
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 st.title("My Medical Gateway")
 st.subheader("Get a quote for your orthpaedic treatment")
 
