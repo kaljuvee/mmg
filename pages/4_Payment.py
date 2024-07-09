@@ -2,6 +2,7 @@
 import streamlit as st
 from utils import switch_page
 
+st.image("img/mmg-logo-small.png", width=200)
 st.title("My Medical Gateway")
 st.subheader("Payment")
 

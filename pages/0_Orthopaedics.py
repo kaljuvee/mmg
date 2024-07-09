@@ -10,12 +10,12 @@ def load_css(file_name):
 load_css("html/styles.css")
 
 # Header section with columns
-col1, col2 = st.columns([1, 3])
+header_col1, header_col2 = st.columns([1, 3])
 
-with col1:
+with header_col1:
     st.image("img/mmg-logo-small.png", width=200)
 
-with col2:
+with header_col2:
     st.markdown("""
         <div class="header">
             <div class="nav" style="display: flex; align-items: center;">
@@ -33,46 +33,54 @@ st.markdown("""
     <div class="breadcrumb">
         <a href="#">Home</a>
         <span>/</span>
-        <span>Orthopedics</span>
+        <span>Orthopaedics</span>
     </div>
 """, unsafe_allow_html=True)
 
 # Main content section
 # Main content section with a smaller image
-st.image("https://cdn.usegalileo.ai/sdxl10/b8c60733-ed79-4d55-8c2e-1706dc4f39e3.png", width=400, caption="Orthopedics")
-
+st.image("https://cdn.usegalileo.ai/sdxl10/b8c60733-ed79-4d55-8c2e-1706dc4f39e3.png", width=600, caption="Orthopaedics")
 
 st.markdown("""
-    <h1 class="violet-heading">Find the best treatment for you</h1>
-    <p class="violet-paragraph">Orthopedic treatments. We all need healthy hip joints, knees and shoulders to get around and enjoy our daily lives. Understand your options and find high quality treatment in a private hospital, in a country of your choice, at a price that you can afford. Need finance? We've got you covered.</p>
+    <h1 class="violet-heading">ORTHOPAEDICS</h1>
+    <p class="violet-paragraph">Still waiting for your hip, knee or shoulder operation? No need to wait any longer. Our medical partners in the EU can treat you immediately.</p>
 """, unsafe_allow_html=True)
 
 # Buttons section
-col1, col2 = st.columns(2)
-with col1:
+button_col1, button_col2 = st.columns([1, 1])
+with button_col1:
     if st.button("Get a quote", key="get_quote"):
         switch_page("Treatment")
-with col2:
+with button_col2:
     if st.button("Retrieve quote", key="retrieve_quote"):
         switch_page("Treatment")
 
+# Lower content sections
+st.markdown("""
+    <h2 class="violet-heading">Find the best treatment for you</h2>
+    <p class="violet-paragraph">Orthopaedic treatments. We all need healthy hip joints, knees and shoulders to get around and enjoy our daily lives. Understand your options and find high quality treatment in a private hospital, in a country of your choice, at a price that you can afford. Need finance? We've got you covered.</p>
+""", unsafe_allow_html=True)
+
 # Right column with account options
-st.markdown("### Already a customer?")
-st.markdown("""
-    <p>Log in or create a MyMMG account to make changes, view your treatment documents or start a new search. Fast and easy, no need to call.</p>
-""", unsafe_allow_html=True)
-if st.button("Visit My MMG", key="visit_mmg"):
-    switch_page("Treatment")
+account_col1, account_col2 = st.columns([1, 1])
 
-st.markdown("### New to My Medical Gateway?")
-st.markdown("""
-    <p>Start your journey with us, get a quote for your treatment or pick up where you left off. Online or over the phone, we look forward to welcoming you.</p>
-""", unsafe_allow_html=True)
+with account_col1:
+    st.markdown("""
+        <h2 class="violet-heading">Already a customer?</h2>
+         <p class="violet-paragraph">Log in or create a MyMMG account to make changes, view your treatment documents or start a new search. Fast and easy, no need to call.</p>
+    """, unsafe_allow_html=True)
+    if st.button("Visit My MMG", key="visit_mmg"):
+        switch_page("Treatment")
 
-col3, col4 = st.columns(2)
-with col3:
-    if st.button("Get a quote", key="get_quote_2"):
-        switch_page("Treatment")
-with col4:
-    if st.button("Retrieve quote", key="retrieve_quote_2"):
-        switch_page("Treatment")
+with account_col2:
+    st.markdown("""
+         <h2 class="violet-heading">New to My Medical Gateway?</h2>       
+        <p class="violet-paragraph">Start your journey with us, get a quote for your treatment or pick up where you left off. Online or over the phone, we look forward to welcoming you.</p>
+    """, unsafe_allow_html=True)
+    quote_button_col1, quote_button_col2 = st.columns([1, 1])
+    with quote_button_col1:
+        if st.button("Get a quote", key="get_quote_2"):
+            switch_page("Treatment")
+    with quote_button_col2:
+        if st.button("Retrieve quote", key="retrieve_quote_2"):
+            switch_page("Treatment")

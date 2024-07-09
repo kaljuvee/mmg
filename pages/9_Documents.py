@@ -5,6 +5,7 @@ from utils import switch_page
 # Set page title and icon
 #st.set_page_config(page_title='My Medical Gateway', page_icon='👤')
 
+st.image("img/mmg-logo-small.png", width=200)
 # Instructions
 st.title("My Medical Gateway")
 st.subheader("Upload Documents")

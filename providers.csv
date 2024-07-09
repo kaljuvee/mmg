@@ -1,81 +1,81 @@
-ClinicName,Address,City,Country,Specialty,SubSpecialty
-Ortho Center,123 Main St,Riga,Latvia,Orthopedics,Arthroscopy
-Ortho Center,123 Main St,Riga,Latvia,Orthopedics,Foot and ankle surgery
-Ortho Center,123 Main St,Riga,Latvia,Orthopedics,Hip replacement surgery
-Ortho Center,123 Main St,Riga,Latvia,Orthopedics,Joint fusion
-Ortho Center,123 Main St,Riga,Latvia,Orthopedics,Knee replacement surgery
-Women's Health Clinic,456 Oak Ave,Vilnius,Lithuania,Gynecology,Prenatal Care
-Women's Health Clinic,456 Oak Ave,Vilnius,Lithuania,Gynecology,Fertility Treatment
-Women's Health Clinic,456 Oak Ave,Vilnius,Lithuania,Gynecology,Menopause Management
-Women's Health Clinic,456 Oak Ave,Vilnius,Lithuania,Gynecology,Pelvic Floor Therapy
-Women's Health Clinic,456 Oak Ave,Vilnius,Lithuania,Gynecology,Gynecologic Surgery
-Eye Care Institute,789 Pine Rd,Bucharest,Romania,Ophthalmology,Cataract Surgery
-Eye Care Institute,789 Pine Rd,Bucharest,Romania,Ophthalmology,Glaucoma Treatment
-Eye Care Institute,789 Pine Rd,Bucharest,Romania,Ophthalmology,Refractive Surgery
-Eye Care Institute,789 Pine Rd,Bucharest,Romania,Ophthalmology,Retina Services
-Eye Care Institute,789 Pine Rd,Bucharest,Romania,Ophthalmology,Pediatric Ophthalmology
-General Hospital,101 Elm St,Paris,France,Other,General Surgery
-General Hospital,101 Elm St,Paris,France,Other,Internal Medicine
-General Hospital,101 Elm St,Paris,France,Other,Emergency Care
-General Hospital,101 Elm St,Paris,France,Other,Family Medicine
-General Hospital,101 Elm St,Paris,France,Other,Diagnostics
-Spine Specialists,202 Maple Dr,Barcelona,Spain,Orthopedics,Arthroscopy
-Spine Specialists,202 Maple Dr,Barcelona,Spain,Orthopedics,Foot and ankle surgery
-Spine Specialists,202 Maple Dr,Barcelona,Spain,Orthopedics,Hip replacement surgery
-Spine Specialists,202 Maple Dr,Barcelona,Spain,Orthopedics,Joint fusion
-Spine Specialists,202 Maple Dr,Barcelona,Spain,Orthopedics,Knee replacement surgery
-Fertility Center,303 Cedar Ln,Istanbul,Turkey,Gynecology,Prenatal Care
-Fertility Center,303 Cedar Ln,Istanbul,Turkey,Gynecology,Fertility Treatment
-Fertility Center,303 Cedar Ln,Istanbul,Turkey,Gynecology,Menopause Management
-Fertility Center,303 Cedar Ln,Istanbul,Turkey,Gynecology,Pelvic Floor Therapy
-Fertility Center,303 Cedar Ln,Istanbul,Turkey,Gynecology,Gynecologic Surgery
-Vision Care,404 Birch Ave,Warsaw,Poland,Ophthalmology,Cataract Surgery
-Vision Care,404 Birch Ave,Warsaw,Poland,Ophthalmology,Glaucoma Treatment
-Vision Care,404 Birch Ave,Warsaw,Poland,Ophthalmology,Refractive Surgery
-Vision Care,404 Birch Ave,Warsaw,Poland,Ophthalmology,Retina Services
-Vision Care,404 Birch Ave,Warsaw,Poland,Ophthalmology,Pediatric Ophthalmology
-MultiSpecialty Clinic,505 Spruce Blvd,Budapest,Hungary,Other,General Surgery
-MultiSpecialty Clinic,505 Spruce Blvd,Budapest,Hungary,Other,Internal Medicine
-MultiSpecialty Clinic,505 Spruce Blvd,Budapest,Hungary,Other,Emergency Care
-MultiSpecialty Clinic,505 Spruce Blvd,Budapest,Hungary,Other,Family Medicine
-MultiSpecialty Clinic,505 Spruce Blvd,Budapest,Hungary,Other,Diagnostics
-Orthopedic Institute,606 Fir St,Riga,Latvia,Orthopedics,Arthroscopy
-Orthopedic Institute,606 Fir St,Riga,Latvia,Orthopedics,Foot and ankle surgery
-Orthopedic Institute,606 Fir St,Riga,Latvia,Orthopedics,Hip replacement surgery
-Orthopedic Institute,606 Fir St,Riga,Latvia,Orthopedics,Joint fusion
-Orthopedic Institute,606 Fir St,Riga,Latvia,Orthopedics,Knee replacement surgery
-Women's Wellness,707 Oak Rd,Kaunas,Lithuania,Gynecology,Prenatal Care
-Women's Wellness,707 Oak Rd,Kaunas,Lithuania,Gynecology,Fertility Treatment
-Women's Wellness,707 Oak Rd,Kaunas,Lithuania,Gynecology,Menopause Management
-Women's Wellness,707 Oak Rd,Kaunas,Lithuania,Gynecology,Pelvic Floor Therapy
-Women's Wellness,707 Oak Rd,Kaunas,Lithuania,Gynecology,Gynecologic Surgery
-Eye Surgery Center,808 Pine Ave,Cluj-Napoca,Romania,Ophthalmology,Cataract Surgery
-Eye Surgery Center,808 Pine Ave,Cluj-Napoca,Romania,Ophthalmology,Glaucoma Treatment
-Eye Surgery Center,808 Pine Ave,Cluj-Napoca,Romania,Ophthalmology,Refractive Surgery
-Eye Surgery Center,808 Pine Ave,Cluj-Napoca,Romania,Ophthalmology,Retina Services
-Eye Surgery Center,808 Pine Ave,Cluj-Napoca,Romania,Ophthalmology,Pediatric Ophthalmology
-Family Practice,909 Elm Dr,Lyon,France,Other,General Surgery
-Family Practice,909 Elm Dr,Lyon,France,Other,Internal Medicine
-Family Practice,909 Elm Dr,Lyon,France,Other,Emergency Care
-Family Practice,909 Elm Dr,Lyon,France,Other,Family Medicine
-Family Practice,909 Elm Dr,Lyon,France,Other,Diagnostics
-Joint Specialists,1010 Maple Ln,Madrid,Spain,Orthopedics,Arthroscopy
-Joint Specialists,1010 Maple Ln,Madrid,Spain,Orthopedics,Foot and ankle surgery
-Joint Specialists,1010 Maple Ln,Madrid,Spain,Orthopedics,Hip replacement surgery
-Joint Specialists,1010 Maple Ln,Madrid,Spain,Orthopedics,Joint fusion
-Joint Specialists,1010 Maple Ln,Madrid,Spain,Orthopedics,Knee replacement surgery
-OB/GYN Associates,1111 Cedar St,Ankara,Turkey,Gynecology,Prenatal Care
-OB/GYN Associates,1111 Cedar St,Ankara,Turkey,Gynecology,Fertility Treatment
-OB/GYN Associates,1111 Cedar St,Ankara,Turkey,Gynecology,Menopause Management
-OB/GYN Associates,1111 Cedar St,Ankara,Turkey,Gynecology,Pelvic Floor Therapy
-OB/GYN Associates,1111 Cedar St,Ankara,Turkey,Gynecology,Gynecologic Surgery
-Laser Eye Center,1212 Birch Rd,Krakow,Poland,Ophthalmology,Cataract Surgery
-Laser Eye Center,1212 Birch Rd,Krakow,Poland,Ophthalmology,Glaucoma Treatment
-Laser Eye Center,1212 Birch Rd,Krakow,Poland,Ophthalmology,Refractive Surgery
-Laser Eye Center,1212 Birch Rd,Krakow,Poland,Ophthalmology,Retina Services
-Laser Eye Center,1212 Birch Rd,Krakow,Poland,Ophthalmology,Pediatric Ophthalmology
-General Care Clinic,1313 Spruce Ave,Debrecen,Hungary,Other,General Surgery
-General Care Clinic,1313 Spruce Ave,Debrecen,Hungary,Other,Internal Medicine
-General Care Clinic,1313 Spruce Ave,Debrecen,Hungary,Other,Emergency Care
-General Care Clinic,1313 Spruce Ave,Debrecen,Hungary,Other,Family Medicine
-General Care Clinic,1313 Spruce Ave,Debrecen,Hungary,Other,Diagnostics
+Doctor,ClinicName,Address,City,Country,Specialty,SubSpecialty,Quote(EUR)
+Dr John Smith,Ortho Center,123 Main St,Riga,Latvia,Orthopedics,Arthroscopy,277
+Dr John Smith,Ortho Center,123 Main St,Riga,Latvia,Orthopedics,Foot and ankle surgery,7719
+Dr John Smith,Ortho Center,123 Main St,Riga,Latvia,Orthopedics,Hip replacement surgery,6453
+Dr John Smith,Ortho Center,123 Main St,Riga,Latvia,Orthopedics,Joint fusion,2682
+Dr John Smith,Ortho Center,123 Main St,Riga,Latvia,Orthopedics,Knee replacement surgery,2582
+Dr John Smith,Women's Health Clinic,456 Oak Ave,Vilnius,Lithuania,Gynecology,Prenatal Care,5162
+Dr John Smith,Women's Health Clinic,456 Oak Ave,Vilnius,Lithuania,Gynecology,Fertility Treatment,7252
+Dr John Smith,Women's Health Clinic,456 Oak Ave,Vilnius,Lithuania,Gynecology,Menopause Management,6179
+Dr John Smith,Women's Health Clinic,456 Oak Ave,Vilnius,Lithuania,Gynecology,Pelvic Floor Therapy,1992
+Dr John Smith,Women's Health Clinic,456 Oak Ave,Vilnius,Lithuania,Gynecology,Gynecologic Surgery,1069
+Dr John Smith,Eye Care Institute,789 Pine Rd,Bucharest,Romania,Ophthalmology,Cataract Surgery,6717
+Dr John Smith,Eye Care Institute,789 Pine Rd,Bucharest,Romania,Ophthalmology,Glaucoma Treatment,665
+Dr John Smith,Eye Care Institute,789 Pine Rd,Bucharest,Romania,Ophthalmology,Refractive Surgery,9793
+Dr John Smith,Eye Care Institute,789 Pine Rd,Bucharest,Romania,Ophthalmology,Retina Services,8196
+Dr John Smith,Eye Care Institute,789 Pine Rd,Bucharest,Romania,Ophthalmology,Pediatric Ophthalmology,8853
+Dr John Smith,General Hospital,101 Elm St,Paris,France,Other,General Surgery,5415
+Dr John Smith,General Hospital,101 Elm St,Paris,France,Other,Internal Medicine,2957
+Dr John Smith,General Hospital,101 Elm St,Paris,France,Other,Emergency Care,6306
+Dr John Smith,General Hospital,101 Elm St,Paris,France,Other,Family Medicine,7461
+Dr John Smith,General Hospital,101 Elm St,Paris,France,Other,Diagnostics,3043
+Dr John Smith,Spine Specialists,202 Maple Dr,Barcelona,Spain,Orthopedics,Arthroscopy,3359
+Dr John Smith,Spine Specialists,202 Maple Dr,Barcelona,Spain,Orthopedics,Foot and ankle surgery,4958
+Dr John Smith,Spine Specialists,202 Maple Dr,Barcelona,Spain,Orthopedics,Hip replacement surgery,88
+Dr John Smith,Spine Specialists,202 Maple Dr,Barcelona,Spain,Orthopedics,Joint fusion,4402
+Dr John Smith,Spine Specialists,202 Maple Dr,Barcelona,Spain,Orthopedics,Knee replacement surgery,478
+Dr John Smith,Fertility Center,303 Cedar Ln,Istanbul,Turkey,Gynecology,Prenatal Care,2953
+Dr John Smith,Fertility Center,303 Cedar Ln,Istanbul,Turkey,Gynecology,Fertility Treatment,9863
+Dr John Smith,Fertility Center,303 Cedar Ln,Istanbul,Turkey,Gynecology,Menopause Management,9301
+Dr John Smith,Fertility Center,303 Cedar Ln,Istanbul,Turkey,Gynecology,Pelvic Floor Therapy,8552
+Dr John Smith,Fertility Center,303 Cedar Ln,Istanbul,Turkey,Gynecology,Gynecologic Surgery,3419
+Dr John Smith,Vision Care,404 Birch Ave,Warsaw,Poland,Ophthalmology,Cataract Surgery,3672
+Dr John Smith,Vision Care,404 Birch Ave,Warsaw,Poland,Ophthalmology,Glaucoma Treatment,2382
+Dr John Smith,Vision Care,404 Birch Ave,Warsaw,Poland,Ophthalmology,Refractive Surgery,7224
+Dr John Smith,Vision Care,404 Birch Ave,Warsaw,Poland,Ophthalmology,Retina Services,8357
+Dr John Smith,Vision Care,404 Birch Ave,Warsaw,Poland,Ophthalmology,Pediatric Ophthalmology,591
+Dr John Smith,MultiSpecialty Clinic,505 Spruce Blvd,Budapest,Hungary,Other,General Surgery,5040
+Dr John Smith,MultiSpecialty Clinic,505 Spruce Blvd,Budapest,Hungary,Other,Internal Medicine,2764
+Dr John Smith,MultiSpecialty Clinic,505 Spruce Blvd,Budapest,Hungary,Other,Emergency Care,2641
+Dr John Smith,MultiSpecialty Clinic,505 Spruce Blvd,Budapest,Hungary,Other,Family Medicine,6373
+Dr John Smith,MultiSpecialty Clinic,505 Spruce Blvd,Budapest,Hungary,Other,Diagnostics,9298
+Dr John Smith,Orthopedic Institute,606 Fir St,Riga,Latvia,Orthopedics,Arthroscopy,8927
+Dr John Smith,Orthopedic Institute,606 Fir St,Riga,Latvia,Orthopedics,Foot and ankle surgery,712
+Dr John Smith,Orthopedic Institute,606 Fir St,Riga,Latvia,Orthopedics,Hip replacement surgery,1129
+Dr John Smith,Orthopedic Institute,606 Fir St,Riga,Latvia,Orthopedics,Joint fusion,2364
+Dr John Smith,Orthopedic Institute,606 Fir St,Riga,Latvia,Orthopedics,Knee replacement surgery,1537
+Dr John Smith,Women's Wellness,707 Oak Rd,Kaunas,Lithuania,Gynecology,Prenatal Care,1595
+Dr John Smith,Women's Wellness,707 Oak Rd,Kaunas,Lithuania,Gynecology,Fertility Treatment,4087
+Dr John Smith,Women's Wellness,707 Oak Rd,Kaunas,Lithuania,Gynecology,Menopause Management,7416
+Dr John Smith,Women's Wellness,707 Oak Rd,Kaunas,Lithuania,Gynecology,Pelvic Floor Therapy,2092
+Dr John Smith,Women's Wellness,707 Oak Rd,Kaunas,Lithuania,Gynecology,Gynecologic Surgery,231
+Dr John Smith,Eye Surgery Center,808 Pine Ave,Cluj-Napoca,Romania,Ophthalmology,Cataract Surgery,9715
+Dr John Smith,Eye Surgery Center,808 Pine Ave,Cluj-Napoca,Romania,Ophthalmology,Glaucoma Treatment,6850
+Dr John Smith,Eye Surgery Center,808 Pine Ave,Cluj-Napoca,Romania,Ophthalmology,Refractive Surgery,6762
+Dr John Smith,Eye Surgery Center,808 Pine Ave,Cluj-Napoca,Romania,Ophthalmology,Retina Services,9535
+Dr John Smith,Eye Surgery Center,808 Pine Ave,Cluj-Napoca,Romania,Ophthalmology,Pediatric Ophthalmology,2422
+Dr John Smith,Family Practice,909 Elm Dr,Lyon,France,Other,General Surgery,1712
+Dr John Smith,Family Practice,909 Elm Dr,Lyon,France,Other,Internal Medicine,2610
+Dr John Smith,Family Practice,909 Elm Dr,Lyon,France,Other,Emergency Care,4198
+Dr John Smith,Family Practice,909 Elm Dr,Lyon,France,Other,Family Medicine,8996
+Dr John Smith,Family Practice,909 Elm Dr,Lyon,France,Other,Diagnostics,9341
+Dr John Smith,Joint Specialists,1010 Maple Ln,Madrid,Spain,Orthopedics,Arthroscopy,5580
+Dr John Smith,Joint Specialists,1010 Maple Ln,Madrid,Spain,Orthopedics,Foot and ankle surgery,748
+Dr John Smith,Joint Specialists,1010 Maple Ln,Madrid,Spain,Orthopedics,Hip replacement surgery,512
+Dr John Smith,Joint Specialists,1010 Maple Ln,Madrid,Spain,Orthopedics,Joint fusion,3632
+Dr John Smith,Joint Specialists,1010 Maple Ln,Madrid,Spain,Orthopedics,Knee replacement surgery,6935
+Dr John Smith,OB/GYN Associates,1111 Cedar St,Ankara,Turkey,Gynecology,Prenatal Care,5613
+Dr John Smith,OB/GYN Associates,1111 Cedar St,Ankara,Turkey,Gynecology,Fertility Treatment,6484
+Dr John Smith,OB/GYN Associates,1111 Cedar St,Ankara,Turkey,Gynecology,Menopause Management,677
+Dr John Smith,OB/GYN Associates,1111 Cedar St,Ankara,Turkey,Gynecology,Pelvic Floor Therapy,1984
+Dr John Smith,OB/GYN Associates,1111 Cedar St,Ankara,Turkey,Gynecology,Gynecologic Surgery,3829
+Dr John Smith,Laser Eye Center,1212 Birch Rd,Krakow,Poland,Ophthalmology,Cataract Surgery,6951
+Dr John Smith,Laser Eye Center,1212 Birch Rd,Krakow,Poland,Ophthalmology,Glaucoma Treatment,5067
+Dr John Smith,Laser Eye Center,1212 Birch Rd,Krakow,Poland,Ophthalmology,Refractive Surgery,6318
+Dr John Smith,Laser Eye Center,1212 Birch Rd,Krakow,Poland,Ophthalmology,Retina Services,7836
+Dr John Smith,Laser Eye Center,1212 Birch Rd,Krakow,Poland,Ophthalmology,Pediatric Ophthalmology,7176
+Dr John Smith,General Care Clinic,1313 Spruce Ave,Debrecen,Hungary,Other,General Surgery,2267
+Dr John Smith,General Care Clinic,1313 Spruce Ave,Debrecen,Hungary,Other,Internal Medicine,3960
+Dr John Smith,General Care Clinic,1313 Spruce Ave,Debrecen,Hungary,Other,Emergency Care,812
+Dr John Smith,General Care Clinic,1313 Spruce Ave,Debrecen,Hungary,Other,Family Medicine,2693
+Dr John Smith,General Care Clinic,1313 Spruce Ave,Debrecen,Hungary,Other,Diagnostics,8213

@@ -12,6 +12,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+st.image("img/mmg-logo-small.png", width=200)
 st.title("My Medical Gateway")
 st.subheader("Get a quote for your orthpaedic treatment")
 
@@ -31,7 +32,7 @@ specialties = [
 ]
 selected_specialty = st.selectbox('Specialty', specialties)
 
-if st.button('Continue to Patient Profile'):
+if st.button('Get Quote'):
     if not selected_specialty:
         st.warning("Please select a specialty.")
     else:

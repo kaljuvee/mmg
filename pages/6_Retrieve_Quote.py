@@ -10,12 +10,14 @@ data = {
     "City": ["Riga"],
     "Country": ["Latvia"],
     "Specialty": ["Orthopedics"],
-    "SubSpecialty": ["Arthroscopy"]
+    "SubSpecialty": ["Arthroscopy"],
+    "Quote (EUR)": ["500"]
 }
 
 # Create a DataFrame
 df = pd.DataFrame(data)
 
+st.image("img/mmg-logo-small.png", width=200)
 # Streamlit app
 st.title("My Medical Gateway")
 st.subheader("Quote Page")

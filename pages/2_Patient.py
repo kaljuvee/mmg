@@ -10,6 +10,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+st.image("img/mmg-logo-small.png", width=200)
 # Page title
 st.title("My Medical Gateway")
 st.subheader("Patient Profile:")

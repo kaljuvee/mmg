@@ -12,6 +12,7 @@ def find_providers(specialty):
     
     return filtered_df
 
+st.image("img/mmg-logo-small.png", width=200)
 st.title("My Medical Gateway")
 st.subheader("Quote Page")
 
@@ -31,7 +32,19 @@ if selected_specialty:
         st.info("No providers found matching your criteria.")
     else:
         st.success(f"Found {len(results)} provider(s) matching your criteria.")
-        st.dataframe(results)
+        
+        for index, row in results.iterrows():
+            with st.expander(f"Doctor: {row['Doctor']} - Clinic: {row['ClinicName']}"):
+                st.write(f"**Clinic Name:** {row['ClinicName']}")
+                st.write(f"**Address:** {row['Address']}")
+                st.write(f"**City:** {row['City']}")
+                st.write(f"**Country:** {row['Country']}")
+                st.write(f"**Specialty:** {row['Specialty']}")
+                st.write(f"**SubSpecialty:** {row['SubSpecialty']}")
+                st.write(f"**Quote(EUR):** {row['Quote(EUR)']}")
+                
+                if st.button(f"View Details of {row['Doctor']}", key=f"details_{index}"):
+                    switch_page("Clinic_Details")
 else:
     st.warning("No specialty selected. Please go back and select a specialty.")
 
