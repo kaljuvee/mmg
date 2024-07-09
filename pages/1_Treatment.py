@@ -23,7 +23,7 @@ if st.button('Continue to Patient Profile'):
         st.warning("Please select a specialty.")
     else:
         st.session_state.selected_specialty = selected_specialty
-        switch_page("Create Profile")
+        switch_page("Patient")
 
 # Adding disclaimer text
 st.write("""
