@@ -30,7 +30,7 @@ st.session_state.last_name = st.text_input('Last name:', st.session_state.last_n
 st.session_state.email = st.text_input('Email:', st.session_state.email)
 st.session_state.phone = st.text_input('Phone:', st.session_state.phone)
 st.session_state.address = st.text_input('Address:', st.session_state.address)
-st.session_state.problem_description = st.text_area('Describe your problem:', st.session_state.problem_description)
+st.session_state.problem_description = st.text_area('Additional comments (optional):', st.session_state.problem_description)
 st.session_state.insurance = st.text_input('Insurance (if any):', st.session_state.insurance)
 
 if st.button('See Quote'):
