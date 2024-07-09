@@ -6,7 +6,7 @@ st.title("My Medical Gateway")
 st.subheader("Confirmation")
 
 # Retrieve email from session state
-email = st.session_state.get('email', 'your email')
+email = st.session_state.email
 
 st.write(f"Your payment has been successfully processed. Thank you for choosing My Medical Gateway! An email was sent to {email}.")
 
