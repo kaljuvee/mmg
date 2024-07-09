@@ -4,9 +4,13 @@ import pandas as pd
 from utils import switch_page
 
 st.title("My Medical Gateway")
-st.subheader("Find Providers")
+st.subheader("Get a quote for your orthpaedic treatment")
 
-st.write("Search for providers by specialty.")
+st.write("My Medical Gateway finds treatment for you in a quality private hospital of your choice in the EU, at a price you can afford.")
+
+st.subheader("Your treatment")
+
+st.write("What treatment do you require?")
 
 # Specialty selectbox (single select)
 specialties = [
