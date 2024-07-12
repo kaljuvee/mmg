@@ -30,6 +30,16 @@ if 'problem_description' not in st.session_state:
     st.session_state.problem_description = ''
 if 'insurance' not in st.session_state:
     st.session_state.insurance = ''
+if 'travel_companion' not in st.session_state:
+    st.session_state.travel_companion = ''
+if 'next_of_kin' not in st.session_state:
+    st.session_state.next_of_kin = ''
+if 'surgery_type' not in st.session_state:
+    st.session_state.surgery_type = ''
+if 'indicative_duration' not in st.session_state:
+    st.session_state.indicative_duration = ''
+if 'financing_required' not in st.session_state:
+    st.session_state.financing_required = False
 
 # Input fields
 st.session_state.first_name = st.text_input('First name:', st.session_state.first_name)
@@ -39,6 +49,11 @@ st.session_state.phone = st.text_input('Phone:', st.session_state.phone)
 st.session_state.address = st.text_input('Address:', st.session_state.address)
 st.session_state.problem_description = st.text_area('Additional comments (optional):', st.session_state.problem_description)
 st.session_state.insurance = st.text_input('Insurance (if any):', st.session_state.insurance)
+st.session_state.travel_companion = st.text_input('Travel companion (if applicable):', st.session_state.travel_companion)
+st.session_state.next_of_kin = st.text_input('Next of kin (optional):', st.session_state.next_of_kin)
+st.session_state.surgery_type = st.text_input('Surgery type:', st.session_state.surgery_type)
+st.session_state.indicative_duration = st.selectbox('Indicative appointment time:', ['0-4 weeks', '4-8 weeks', '8-12 weeks', 'More than 12 weeks'])
+st.session_state.financing_required = st.checkbox('Financing required', st.session_state.financing_required)
 
 if st.button('See Quote'):
     # Here you would typically save the profile data
@@ -56,5 +71,4 @@ st.write("""
     <p>My Medical Gateway International Limited (Company no. 1234567) is Registered in RAK IIC at Registered Office
     address G03 Emaar Building 3, Emaar Business Park, Dubai, UAE.</p>
 </div>
-
 """, unsafe_allow_html=True)

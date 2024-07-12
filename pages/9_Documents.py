@@ -32,11 +32,11 @@ if uploaded_files:
     for uploaded_file in uploaded_files:
         save_uploaded_file(uploaded_file)
 
-if st.button('Back to Profile'):
-    switch_page("Create Profile")
+if st.button('Back to MMG'):
+    switch_page("Patient")
 
-if st.button('Next - Provider Search'):
-    switch_page("Provider Search")
+if st.button('Back to Quote'):
+    switch_page("Quote")
 
 st.write("""
 <div class="disclaimer">
