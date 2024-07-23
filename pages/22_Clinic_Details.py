@@ -36,8 +36,8 @@ st.write(f"**Country:** {provider['Country']}")
 st.write(f"**Specialty:** {provider['Specialty']}")
 st.write(f"**SubSpecialty:** {provider['SubSpecialty']}")
 st.write(f"**Quote(EUR):** {provider['Quote(EUR)']}")
-st.write(f"**Priority waiting time:** 2 weeks")
-st.write(f"**Regular waiting time:** 8 weeks")
+st.write(f"**riority waiting time (average):** 2 weeks")
+st.write(f"**Regular waiting time (average):** 8 weeks")
 
 # Review stars image
 st.image(provider['ReviewStars'], width=100, caption="Review Stars")
