@@ -20,7 +20,7 @@ df = pd.DataFrame(data)
 st.image("img/mmg-logo-small.png", width=200)
 # Streamlit app
 st.title("My Medical Gateway")
-st.subheader("Quote Page")
+st.subheader("Your Account")
 
 # Display patient name if available in session state
 first_name = st.session_state.get('first_name', '')

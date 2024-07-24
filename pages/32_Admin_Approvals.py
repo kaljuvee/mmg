@@ -10,7 +10,7 @@ st.image("img/mmg-logo-small.png", width=200)
 st.title("Admin Approvals")
 
 # Section for Patients
-st.header("Patients Approval")
+st.header("Patients Status")
 
 # Sample data for patients with their statuses
 patients_data = [
@@ -39,7 +39,7 @@ for patient in patients_data:
 st.write("---")
 
 # Section for Clinics
-st.header("Clinics Approval")
+st.header("Clinics Status")
 
 # Sample data for clinics with their statuses
 clinics_data = [
