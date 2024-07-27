@@ -1,5 +1,9 @@
 # My Medical Gateway - MMG
 
+## Clone the repo
+  ```
+  https://github.com/kaljuvee/mmg.git
+  ```
 ## Create and Activate the Virtual Environment:
 - Set up a Python virtual environment and activate it (Linux):
   ```
