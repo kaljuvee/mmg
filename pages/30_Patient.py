@@ -81,6 +81,7 @@ all_countries = [
 ]
 
 # Multiselect for preferred countries
+# Name up to 3 countries
 st.session_state.preferred_countries = st.multiselect(
     'Do you have a preference for the location of your treatment?', 
     options=all_countries, 
