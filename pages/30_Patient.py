@@ -50,8 +50,7 @@ session_state_defaults = {
     'call_you': 'No',
     'financing': 'Self financed',
     'preferred_countries': [
-        'Bulgaria', 'Croatia', 'Czech Republic', 'Hungary', 'Poland', 'Romania', 
-        'Slovakia', 'Slovenia', 'Greece', 'Italy', 'Portugal', 'Spain'
+        'Lithuania', 'Poland', 'Romania',  'Portugal', 'Spain'
     ],
     'validated': 'No'
 }
