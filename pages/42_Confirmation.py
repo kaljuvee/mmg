@@ -1,4 +1,3 @@
-# pages/Provider_Search.py
 import streamlit as st
 import pandas as pd
 from utils import switch_page
@@ -21,33 +20,36 @@ st.title("My Medical Gateway")
 # Render the progress bar
 st.markdown("""
     <div class="progress-container">
-        <div class="progress-step-line">
+        <div class="progress-step completed">
             <div class="circle">1</div>
             <div class="label">Treatment</div>
         </div>
-        <div class="progress-step-line"></div>
-        <div class="progress-step">
+        <div class="progress-step-line completed"></div>
+        <div class="progress-step completed">
             <div class="circle">2</div>
             <div class="label">Patient</div>
         </div>
-        <div class="progress-step-line"></div>
-        <div class="progress-step">
+        <div class="progress-step-line completed"></div>
+        <div class="progress-step completed">
             <div class="circle">3</div>
             <div class="label">View Quote</div>
         </div>
-        <div class="progress-step-line"></div>
-        <div class="progress-step">
+        <div class="progress-step-line completed"></div>
+        <div class="progress-step completed">
             <div class="circle">4</div>
             <div class="label">Payment</div>
         </div>
-        <div class="progress-step active"></div>
-        <div class="progress-step">
+        <div class="progress-step-line completed"></div>
+        <div class="progress-step active">
             <div class="circle">5</div>
             <div class="label">Confirmation</div>
         </div>
     </div>
 """, unsafe_allow_html=True)
-st.subheader("Payment")
+
+st.subheader("Confirmation")
+# Your confirmation page content here
+
 # Retrieve email from session state
 email = st.session_state.get('email', '')
 

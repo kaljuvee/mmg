@@ -73,8 +73,6 @@ def find_providers(specialty):
     
     return filtered_df
 
-st.subheader("View Quote")
-
 st.write("Here are the providers for your selected specialty:")
 
 # Retrieve the selected specialty from session state

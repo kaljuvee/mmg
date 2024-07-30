@@ -17,26 +17,25 @@ load_css("html/progress.css")
 
 st.image("img/mmg-logo-small.png", width=200)
 st.title("My Medical Gateway")
-
 # Render the progress bar
 st.markdown("""
     <div class="progress-container">
-        <div class="progress-step-line">
+        <div class="progress-step completed">
             <div class="circle">1</div>
             <div class="label">Treatment</div>
         </div>
-        <div class="progress-step-line"></div>
-        <div class="progress-step">
+        <div class="progress-step-line completed"></div>
+        <div class="progress-step completed">
             <div class="circle">2</div>
             <div class="label">Patient</div>
         </div>
-        <div class="progress-step-line"></div>
-        <div class="progress-step">
+        <div class="progress-step-line completed"></div>
+        <div class="progress-step completed">
             <div class="circle">3</div>
             <div class="label">View Quote</div>
         </div>
-        <div class="progress-step active"></div>
-        <div class="progress-step">
+        <div class="progress-step-line completed"></div>
+        <div class="progress-step active">
             <div class="circle">4</div>
             <div class="label">Payment</div>
         </div>
@@ -47,6 +46,7 @@ st.markdown("""
         </div>
     </div>
 """, unsafe_allow_html=True)
+
 st.subheader("Payment")
 
 
@@ -66,8 +66,8 @@ if 'card_number' not in st.session_state:
     st.session_state.card_number = ''
 
 # Display debug information
-st.write(f"Address: {address}")
-st.write(f"Card Name: {st.session_state.card_name}")
+#st.write(f"Address: {address}")
+#st.write(f"Card Name: {st.session_state.card_name}")
 
 # Input fields
 st.session_state.card_name = st.text_input('Cardholder Name:', st.session_state.card_name)
