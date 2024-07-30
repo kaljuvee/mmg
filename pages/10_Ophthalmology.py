@@ -33,27 +33,27 @@ st.markdown("""
     <div class="breadcrumb">
         <a href="#">Home</a>
         <span>/</span>
-        <span>Orthopaedics</span>
+        <span>Opthalmology</span>
     </div>
 """, unsafe_allow_html=True)
 
 # Main content section
 # Main content section with a smaller image
-st.image("https://cdn.usegalileo.ai/sdxl10/b8c60733-ed79-4d55-8c2e-1706dc4f39e3.png", width=600, caption="Orthopaedics")
+st.image("https://cdn.usegalileo.ai/sdxl10/b8c60733-ed79-4d55-8c2e-1706dc4f39e3.png", width=600, caption="Opthalmology")
 
 st.markdown("""
-    <h1 class="violet-heading">ORTHOPAEDICS</h1>
-    <p class="violet-paragraph">Still waiting for your hip, knee or shoulder operation? No need to wait any longer. Our medical partners in the EU can treat you immediately.</p>
+    <h1 class="violet-heading">Opthalmology</h1>
+    <p class="violet-paragraph">Still waiting for your cataract, glaucoma, or LASIK surgery? No need to wait any longer. Our medical partners in the EU can treat you immediately.</p>
 """, unsafe_allow_html=True)
 
 # Buttons section
 button_col1, button_col2 = st.columns([1, 1])
 with button_col1:
     if st.button("Get a quote", key="get_quote"):
-        switch_page("Treatment")
+        switch_page("Opthalmology_Quote")
 with button_col2:
     if st.button("Retrieve quote", key="retrieve_quote"):
-        switch_page("Treatment")
+        switch_page("Login")
 
 # Lower content sections
 st.markdown("""
@@ -90,8 +90,7 @@ st.write("""
     <p>Our Confidentiality Undertaking & Standard Terms and our Fraud Prevention Policy are available for you to read. 
     We would like to draw your attention to them if this is your first contact with MMG and the MMG website.</p>
     <p>Mystery shopping from this website is not permitted. For full details, please refer to our Standard Terms above.</p>
-    <p>My Medical Gateway International Limited (Company no. 1234567) is Registered in RAK IIC at Registered Office
-    address G03 Emaar Building 3, Emaar Business Park, Dubai, UAE.</p>
+    <p>My Medical Gateway International Limited</p>
 </div>
 
 """, unsafe_allow_html=True)

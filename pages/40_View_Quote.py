@@ -1,7 +1,68 @@
-# pages/3_Quote_Page.py
+# pages/Provider_Search.py
 import streamlit as st
 import pandas as pd
 from utils import switch_page
+from utils import load_css
+
+# Inject CSS for custom styling
+st.markdown("""
+    <style>
+        .stSelectbox div[data-baseweb="select"] {
+            width: 200px;  /* Adjust the width as needed */
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+load_css("html/progress.css")
+
+st.image("img/mmg-logo-small.png", width=200)
+st.title("My Medical Gateway")
+
+# Render the progress bar
+# Render the progress bar
+import streamlit as st
+import pandas as pd
+from utils import switch_page
+from utils import load_css
+
+load_css("html/progress.css")
+
+st.image("img/mmg-logo-small.png", width=200)
+st.title("My Medical Gateway")
+
+# Render the progress bar
+st.markdown("""
+    <div class="progress-container">
+        <div class="progress-step completed">
+            <div class="circle">1</div>
+            <div class="label">Treatment</div>
+        </div>
+        <div class="progress-step-line completed"></div>
+        <div class="progress-step completed">
+            <div class="circle">2</div>
+            <div class="label">Patient</div>
+        </div>
+        <div class="progress-step-line completed"></div>
+        <div class="progress-step active">
+            <div class="circle">3</div>
+            <div class="label">View Quote</div>
+        </div>
+        <div class="progress-step-line"></div>
+        <div class="progress-step">
+            <div class="circle">4</div>
+            <div class="label">Payment</div>
+        </div>
+        <div class="progress-step-line"></div>
+        <div class="progress-step">
+            <div class="circle">5</div>
+            <div class="label">Confirmation</div>
+        </div>
+    </div>
+""", unsafe_allow_html=True)
+
+st.header("View Quote")
+# Your view quote page content here
+
 
 def find_providers(specialty):
     # Read the CSV file
@@ -12,9 +73,7 @@ def find_providers(specialty):
     
     return filtered_df
 
-st.image("img/mmg-logo-small.png", width=200)
-st.title("My Medical Gateway")
-st.subheader("Quote Page")
+st.subheader("View Quote")
 
 st.write("Here are the providers for your selected specialty:")
 
@@ -61,8 +120,7 @@ st.write("""
     <p>Our Confidentiality Undertaking & Standard Terms and our Fraud Prevention Policy are available for you to read. 
     We would like to draw your attention to them if this is your first contact with MMG and the MMG website.</p>
     <p>Mystery shopping from this website is not permitted. For full details, please refer to our Standard Terms above.</p>
-    <p>My Medical Gateway International Limited (Company no. 1234567) is Registered in RAK IIC at Registered Office
-    address G03 Emaar Building 3, Emaar Business Park, Dubai, UAE.</p>
+    <p>My Medical Gateway International Limited</p>
 </div>
 
 """, unsafe_allow_html=True)
