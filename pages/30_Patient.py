@@ -40,33 +40,32 @@ st.markdown("""
 st.header("Patient Information")
 
 # Initialize session state variables if they don't exist
-if 'first_name' not in st.session_state:
-    st.session_state.first_name = ''
-if 'last_name' not in st.session_state:
-    st.session_state.last_name = ''
-if 'email' not in st.session_state:
-    st.session_state.email = ''
-if 'problem' not in st.session_state:
-    st.session_state.problem = ''
-if 'urgency' not in st.session_state:
-    st.session_state.urgency = '2-4 weeks'
-if 'call_you' not in st.session_state:
-    st.session_state.call_you = 'No'
-if 'financing' not in st.session_state:
-    st.session_state.financing = 'Self financed'
-if 'preferred_countries' not in st.session_state:
-    st.session_state.preferred_countries = [
+session_state_defaults = {
+    'first_name': '',
+    'last_name': '',
+    'email': '',
+    'phone': '',
+    'problem': '',
+    'urgency': '2-4 weeks',
+    'call_you': 'No',
+    'financing': 'Self financed',
+    'preferred_countries': [
         'Bulgaria', 'Croatia', 'Czech Republic', 'Hungary', 'Poland', 'Romania', 
         'Slovakia', 'Slovenia', 'Greece', 'Italy', 'Portugal', 'Spain'
-    ]
-if 'validated' not in st.session_state:
-    st.session_state.validated = 'No'
+    ],
+    'validated': 'No'
+}
+
+for key, value in session_state_defaults.items():
+    if key not in st.session_state:
+        st.session_state[key] = value
 
 # Input fields for primary information
 st.write('Please let us know your name and your best contact email address:')
-st.session_state.first_name = st.text_input('Name:', st.session_state.first_name)
-st.session_state.last_name = st.text_input('Name:', st.session_state.last_name)
+st.session_state.first_name = st.text_input('First name:', st.session_state.first_name)
+st.session_state.last_name = st.text_input('Last name:', st.session_state.last_name)
 st.session_state.email = st.text_input('Email:', st.session_state.email)
+st.session_state.phone = st.text_input('Phone:', st.session_state.phone)
 st.session_state.problem = st.text_input('Can you tell us what the medical or surgical problem is that you need help with?', st.session_state.problem)
 st.session_state.validated = st.selectbox('Has this been validated by a medical professional?', ['Yes', 'No'], index=0 if st.session_state.validated == 'Yes' else 1)
 st.session_state.urgency = st.selectbox('How quickly would you like to have treatment?', ['As soon as possible - within 6 weeks', 'No rush - longer than 6 weeks'], index=0 if st.session_state.urgency == '2-4 weeks' else 1)
@@ -81,14 +80,10 @@ all_countries = [
 ]
 
 # Multiselect for preferred countries
-# Name up to 3 countries
 st.session_state.preferred_countries = st.multiselect(
     'Do you have a preference for the location of your treatment?', 
     options=all_countries, 
-    default=[
-        'Bulgaria', 'Croatia', 'Czech Republic', 'Hungary', 'Poland', 'Romania', 
-        'Slovakia', 'Slovenia', 'Greece', 'Italy', 'Portugal', 'Spain'
-    ]
+    default=st.session_state.preferred_countries
 )
 
 st.markdown("""
