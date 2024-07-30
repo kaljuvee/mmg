@@ -40,8 +40,10 @@ st.markdown("""
 st.header("Patient Information")
 
 # Initialize session state variables if they don't exist
-if 'name' not in st.session_state:
-    st.session_state.name = ''
+if 'first_name' not in st.session_state:
+    st.session_state.first_name = ''
+if 'last_name' not in st.session_state:
+    st.session_state.last_name = ''
 if 'email' not in st.session_state:
     st.session_state.email = ''
 if 'problem' not in st.session_state:
@@ -62,13 +64,14 @@ if 'validated' not in st.session_state:
 
 # Input fields for primary information
 st.write('Please let us know your name and your best contact email address:')
-st.session_state.name = st.text_input('Name:', st.session_state.name)
+st.session_state.first_name = st.text_input('Name:', st.session_state.first_name)
+st.session_state.last_name = st.text_input('Name:', st.session_state.last_name)
 st.session_state.email = st.text_input('Email:', st.session_state.email)
 st.session_state.problem = st.text_input('Can you tell us what the medical or surgical problem is that you need help with?', st.session_state.problem)
 st.session_state.validated = st.selectbox('Has this been validated by a medical professional?', ['Yes', 'No'], index=0 if st.session_state.validated == 'Yes' else 1)
 st.session_state.urgency = st.selectbox('How quickly would you like to have treatment?', ['As soon as possible - within 6 weeks', 'No rush - longer than 6 weeks'], index=0 if st.session_state.urgency == '2-4 weeks' else 1)
 st.session_state.call_you = st.selectbox('Would you like us to call you:', ['Yes', 'No'], index=0 if st.session_state.call_you == 'Yes' else 1)
-st.session_state.financing = st.selectbox('Do you need help with financing options?', ['Self financed', 'Monetising pension plan', 'MMG financing partners'], index=['Self financed', 'Monetising pension plan', 'MMG financing partners'].index(st.session_state.financing))
+st.session_state.financing = st.selectbox('Do you need help with financing options?', ['Self financed', 'Health insurance', 'Monetising pension plan', 'MMG financing partners'], index=['Self financed', 'Monetising pension plan', 'MMG financing partners'].index(st.session_state.financing))
 
 # List of countries
 all_countries = [
