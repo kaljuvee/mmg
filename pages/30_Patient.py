@@ -42,8 +42,10 @@ st.header("Patient Information")
 # Initialize session state variables if they don't exist
 if 'name' not in st.session_state:
     st.session_state.name = ''
-if 'phone' not in st.session_state:
-    st.session_state.phone = ''
+if 'email' not in st.session_state:
+    st.session_state.email = ''
+if 'problem' not in st.session_state:
+    st.session_state.problem = ''
 if 'urgency' not in st.session_state:
     st.session_state.urgency = '2-4 weeks'
 if 'call_you' not in st.session_state:
@@ -55,13 +57,18 @@ if 'preferred_countries' not in st.session_state:
         'Bulgaria', 'Croatia', 'Czech Republic', 'Hungary', 'Poland', 'Romania', 
         'Slovakia', 'Slovenia', 'Greece', 'Italy', 'Portugal', 'Spain'
     ]
+if 'validated' not in st.session_state:
+    st.session_state.validated = 'No'
 
 # Input fields for primary information
+st.write('Please let us know your name and your best contact email address:')
 st.session_state.name = st.text_input('Name:', st.session_state.name)
-st.session_state.phone = st.text_input('Phone:', st.session_state.phone)
-st.session_state.urgency = st.selectbox('How urgent / when:', ['2-4 weeks', '4 weeks or longer'], index=0 if st.session_state.urgency == '2-4 weeks' else 1)
+st.session_state.email = st.text_input('Email:', st.session_state.email)
+st.session_state.problem = st.text_input('Can you tell us what the medical or surgical problem is that you need help with?', st.session_state.problem)
+st.session_state.validated = st.selectbox('Has this been validated by a medical professional?', ['Yes', 'No'], index=0 if st.session_state.validated == 'Yes' else 1)
+st.session_state.urgency = st.selectbox('How quickly would you like to have treatment?', ['As soon as possible - within 6 weeks', 'No rush - longer than 6 weeks'], index=0 if st.session_state.urgency == '2-4 weeks' else 1)
 st.session_state.call_you = st.selectbox('Would you like us to call you:', ['Yes', 'No'], index=0 if st.session_state.call_you == 'Yes' else 1)
-st.session_state.financing = st.selectbox('Financing chosen:', ['Self financed', 'Monetising pension plan', 'MMG financing partners'], index=['Self financed', 'Monetising pension plan', 'MMG financing partners'].index(st.session_state.financing))
+st.session_state.financing = st.selectbox('Do you need help with financing options?', ['Self financed', 'Monetising pension plan', 'MMG financing partners'], index=['Self financed', 'Monetising pension plan', 'MMG financing partners'].index(st.session_state.financing))
 
 # List of countries
 all_countries = [
@@ -72,13 +79,18 @@ all_countries = [
 
 # Multiselect for preferred countries
 st.session_state.preferred_countries = st.multiselect(
-    'Preferred treatment countries:', 
+    'Do you have a preference for the location of your treatment?', 
     options=all_countries, 
     default=[
         'Bulgaria', 'Croatia', 'Czech Republic', 'Hungary', 'Poland', 'Romania', 
         'Slovakia', 'Slovenia', 'Greece', 'Italy', 'Portugal', 'Spain'
     ]
 )
+
+st.markdown("""
+**Note:** Once you have confirmed your booking, our providers may ask you for additional information on your medical history and condition before you arrive.
+                   
+""")
 
 col1, col2 = st.columns(2)
 

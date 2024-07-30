@@ -37,22 +37,41 @@ st.session_state.email = st.text_input('Email:', st.session_state.email)
 st.session_state.phone = st.text_input('Phone:', st.session_state.phone)
 st.session_state.address = st.text_input('Address:', st.session_state.address)
 
-st.subheader("Additional Information:")
-st.session_state.problem_description = st.text_area('Additional comments (optional):', st.session_state.problem_description)
-st.session_state.insurance = st.text_input('Insurance (if any):', st.session_state.insurance)
-st.session_state.travel_companion = st.text_input('Travel companion (if applicable):', st.session_state.travel_companion)
-st.session_state.next_of_kin = st.text_input('Next of kin (optional):', st.session_state.next_of_kin)
-st.session_state.surgery_type = st.text_input('Surgery type:', st.session_state.surgery_type)
-st.session_state.indicative_duration = st.selectbox('Indicative appointment time:', ['0-4 weeks', '4-8 weeks', '8-12 weeks', 'More than 12 weeks'], index=['0-4 weeks', '4-8 weeks', '8-12 weeks', 'More than 12 weeks'].index(st.session_state.indicative_duration) if 'indicative_duration' in st.session_state else 0)
-st.session_state.financing_required = st.checkbox('Financing required', st.session_state.financing_required)
+st.subheader("Provider Information Requirements:")
+st.session_state.problem_description = st.text_area(
+    'What is the underlying diagnosis?',
+    st.session_state.problem_description,
+    help="Understanding the patient’s specific problem."
+)
+st.session_state.surgery_type = st.text_input(
+    'What is the proposed / requested procedure?',
+    st.session_state.surgery_type,
+    help="Knowing what the specific fix required is e.g., repair vs replacement."
+)
+st.session_state.validated = st.selectbox(
+    'Has this been validated by a medical professional?',
+    ['Yes', 'No'],
+    index=0 if st.session_state.validated == 'Yes' else 1,
+    help="Clarification that this is the correct course of action by a medical professional."
+)
+st.session_state.medical_history = st.text_area(
+    'Medical history:',
+    st.session_state.medical_history,
+    help="Additional medical problems that the anaesthetists will need to know about e.g., heart disease, diabetes etc., regarding the safety of general anaesthesia / factors that may interfere with successful operation."
+)
+st.session_state.diagnostics_information = st.text_area(
+    'Diagnostics information:',
+    st.session_state.diagnostics_information,
+    help="Latest results e.g., X-rays / Scans and blood tests e.g., renal function."
+)
 
 # Save button
 if st.button('Save'):
     st.success("Information updated successfully!")
 
-# Save button
+# Home button
 if st.button('Home'):
-    st.success("Home")
+    switch_page("Home")
 
 # Adding disclaimer text
 st.write("""

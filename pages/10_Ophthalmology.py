@@ -70,7 +70,7 @@ with account_col1:
          <p class="violet-paragraph">Log in or create a MyMMG account to make changes, view your treatment documents or start a new search. Fast and easy, no need to call.</p>
     """, unsafe_allow_html=True)
     if st.button("Visit My MMG", key="visit_mmg"):
-        switch_page("Treatment")
+        switch_page("Login")
 
 with account_col2:
     st.markdown("""
@@ -80,10 +80,10 @@ with account_col2:
     quote_button_col1, quote_button_col2 = st.columns([1, 1])
     with quote_button_col1:
         if st.button("Get a quote", key="get_quote_2"):
-            switch_page("Treatment")
+            switch_page("Opthalmology_Quote")
     with quote_button_col2:
         if st.button("Retrieve quote", key="retrieve_quote_2"):
-            switch_page("Treatment")
+            switch_page("Login")
 
 st.write("""
 <div class="disclaimer">
