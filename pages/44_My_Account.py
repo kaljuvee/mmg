@@ -21,6 +21,24 @@ st.image("img/mmg-logo-small.png", width=200)
 st.title("My Medical Gateway")
 st.subheader("Your Account")
 
+# Initialize session state variables if they don't exist
+session_state_defaults = {
+    'first_name': '',
+    'last_name': '',
+    'email': '',
+    'phone': '',
+    'address': '',
+    'problem_description': '',
+    'surgery_type': '',
+    'validated': 'No',
+    'medical_history': '',
+    'diagnostics_information': ''
+}
+
+for key, value in session_state_defaults.items():
+    if key not in st.session_state:
+        st.session_state[key] = value
+
 # Display patient name if available in session state
 first_name = st.session_state.get('first_name', '')
 st.write(f"Below is your account information. You can edit the fields below if needed, then click 'Save' to update your information.")
